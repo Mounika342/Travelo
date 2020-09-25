@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Travel &amp; Tours</title>
+    <!--Bootstrap Links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--css link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Font awesome Icons link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google Fonts Link-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar starts-->
+    <div class="bg-image">
+        <nav class="navbar navbar-expand-lg navbar-light  main-nav">
+
+            <div class="container">
+                <a class="navbar-brand plane" href="#"><i class="fa fa-plane" aria-hidden="true"></i>Travelo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destination.html">Destination</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hotel.html">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn primary">Book Now</button>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="container">
+            <div class="content">
+                <div data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i></div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">VEDIO</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <video controls id="video1">
+                                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                                    Your browser doesn't support HTML5 video tag.
+                                </video>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animatable fadeInUp">
+                    <p>Travel to the any corner of the world, without going around in circles</p>
+                    <h1>Make Your Tour Amazing With Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Where do you want to go-->
+    <div class="section_whereto_go">
+        <div class="container animatable fadeInUp">
+            <h4>Where do you want to go?</h4>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1"></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Destination">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <form action="/action_page.php">
+                        <div class="form-group calender-forms">
+                            <label for="birthday"></label>
+                            <input type="date" id="birthday" name="birthday" class="calender-form">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <form action="/action_page.php">
+                        <div class="form-group calender-forms">
+                            <label for="birthday"></label>
+                            <input type="date" id="birthday" name="birthday" class="calender-form">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <button class="boxed-btn4" type="submit">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Tour Destination Start-->
+    <div class="container">
+        <h2 class="destination-heading animatable bounceInLeft">Tour Destination</h2>
+        <div class="row mt-5 animatable fadeInUp">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                <div class="card" style="">
+                    <img src="assets/images/indo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body destination-info">
+                        <button type="button" class="btn secondary">$350/person</button>
+                        <p class="card-text tour-details">8 Days Tour</p>
+                        <h3>Bali, Indonesia</h3>
+                        <p class="tour-details-map"><i class="fa fa-map-marker" aria-hidden="true"></i>Bali, Indonesia</p>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>(210 Reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="card" style="">
+                    <img src="assets/images/indo2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body destination-info">
+                        <button type="button" class="btn secondary">$350/person</button>
+                        <p class="card-text tour-details">8 Days Tour</p>
+                        <h3>Bali, Indonesia</h3>
+                        <p class="tour-details-map"><i class="fa fa-map-marker" aria-hidden="true"></i>Bali, Indonesia</p>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>(210 Reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="card" style="">
+                    <img src="assets/images/indo3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body destination-info">
+                        <button type="button" class="btn secondary">$350/person</button>
+                        <p class="card-text tour-details">8 Days Tour</p>
+                        <h3>Bali, Indonesia</h3>
+                        <p class="tour-details-map"><i class="fa fa-map-marker" aria-hidden="true"></i>Bali, Indonesia</p>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>(210 Reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 animatable fadeInUp">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="card" style="">
+                    <img src="assets/images/indo3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body destination-info">
+                        <button type="button" class="btn secondary">$350/person</button>
+                        <p class="card-text tour-details">8 Days Tour</p>
+                        <h3>Bali, Indonesia</h3>
+                        <p class="tour-details-map"><i class="fa fa-map-marker" aria-hidden="true"></i>Bali, Indonesia</p>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>(210 Reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="card" style="">
+                    <img src="assets/images/indo2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body destination-info">
+                        <button type="button" class="btn secondary">$350/person</button>
+                        <p class="card-text tour-details">8 Days Tour</p>
+                        <h3>Bali, Indonesia</h3>
+                        <p class="tour-details-map"><i class="fa fa-map-marker" aria-hidden="true"></i>Bali, Indonesia</p>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>(210 Reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="card" style="">
+                    <img src="assets/images/indo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body destination-info">
+                        <button type="button" class="btn secondary">$350/person</button>
+                        <p class="card-text tour-details">8 Days Tour</p>
+                        <h3>Bali, Indonesia</h3>
+                        <p class="tour-details-map"><i class="fa fa-map-marker" aria-hidden="true"></i>Bali, Indonesia</p>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>(210 Reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Tour Destination End-->
+
+
+    <!--Recent posts Start-->
+    <div class="container">
+        <h2 class="destination-heading animatable fadeInUp">Best Place Destination</h2>
+        <div class="row mt-5 animatable bounceInLeft mr-0">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="best-place">
+                    <h5 class="location">Singapore</h5>
+                    <button type="button" class="btn secondary-one">10 Tours</button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="best-place2">
+                    <h5 class="location">Canada</h5>
+                    <button type="button" class="btn secondary-one">10 Tours</button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="best-place3">
+                    <h5 class="location">Thailand</h5>
+                    <button type="button" class="btn secondary-one">10 Tours</button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="best-place4">
+                    <h5 class="location">Australia</h5>
+                    <button type="button" class="btn secondary-one">10 Tours</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Recent posts End-->
+    <!--Services starts-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="services-heading animatable fadeInUp">
+                    <h2>We offered best services</h2>
+                    <p>Waters make fish every without firmament saw had. Morning air subdue. Our. Air very one. Whales grass is fish whales winged.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
+            <div class="row mt-5 animatable fadeInUp">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="transportation">
+                        <img src="assets/images/flight.jpg" alt="">
+                        <h5>Transportation</h5>
+                        <p>All transportation cost we bear</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="transportation">
+                        <img src="assets/images/guid'.png" alt="">
+                        <h5>Guidence</h5>
+                        <p>We offer the best guidence for you</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="transportation">
+                        <img src="assets/images/acc.png" alt="">
+                        <h5>Accomodation</h5>
+                        <p>Luxarious and comfortable</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="transportation">
+                        <img src="assets/images/disc.png" alt="">
+                        <h5>Discover world</h5>
+                        <p>Best tour plan for your next tour</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--Services end-->
+    <!--customer review starts-->
+    <div class="our-team-info">
+        <h2 class="animatable fadeInUp">Our Team</h2>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div class="fifth-page">
+                        <img src="assets/images/person_1.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="stars-one">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="fifth-page">
+                        <img src="assets/images/person_1.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="stars-one">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fifth-page">
+                        <img src="assets/images/person_1.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="stars-one">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!--customer review ends-->
+    <!--Footer Section-->
+    <div class="footer-info animatable fadeInUp">
+        <div class="container">
+            <div class="row animatable fadeInUp">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="footer-text">
+                        <a href=""><i class="fa fa-plane" aria-hidden="true"></i>Travelo</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis facilis aut sit reprehenderit ducimus repudiandae ab, autem obcaecati illum vero provident maxime earum fuga dignissimos labore possimus, suscipit magnam veritatis?</p>
+                        <div class="footer-icons">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h4 class="company">Navigations</h4>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <ul class="links">
+                                <li>Home</li>
+                                <li>Destination</li>
+                                <li>Services</li>
+                                <li>Gallery</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <ul class="links">
+                                <li>About Us</li>
+                                <li>Privacy Policy</li>
+                                <li>Contact Us</li>
+                                <li>Discounts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h4 class="company">Subscribe Newsletter</h4>
+                    <p class="lorem-text">Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
+                    <div class="rob1">
+                        <form class="example" action="/action_page.php" style="width: 300px;">
+                            <input type="text-text" placeholder="Enter Email Address" name="search2" class="email-add">
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr class="horizontal-line">
+            <div class="footer">Copyrights &copy;2020</div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>
+    $('#myModal').on('shown.bs.modal', function() {
+        $('#video1')[0].play();
+    })
+    $('#myModal').on('hidden.bs.modal', function() {
+        $('#video1')[0].pause();
+    })
+</script>
+
+
+<script type="text/javascript">
+    jQuery(function($) {
+
+        // Function which adds the 'animated' class to any '.animatable' in view
+        var doAnimations = function() {
+
+            // Calc current offset and get all animatables
+            var offset = $(window).scrollTop() + $(window).height(),
+                $animatables = $('.animatable');
+
+            // Unbind scroll handler if we have no animatables
+            if ($animatables.length == 0) {
+                $(window).off('scroll', doAnimations);
+            }
+
+            // Check all animatables and animate them if necessary
+            $animatables.each(function(i) {
+                var $animatable = $(this);
+                if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+                    $animatable.removeClass('animatable').addClass('animated');
+                }
+            });
+
+        };
+
+        // Hook doAnimations on scroll, and trigger a scroll
+        $(window).on('scroll', doAnimations);
+        $(window).trigger('scroll');
+
+    });
+</script>
+
+</html>
