@@ -83,7 +83,7 @@ label {
 .section_whereto_go{
     background: #040E27;
     padding: 50px 0;
-    color: #fff;
+    color: #f8f9fa !important;
 }
 .section_whereto_go form .form-control{
     background-color: rgba(0,0,0,.075);
